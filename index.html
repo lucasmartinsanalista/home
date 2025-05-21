@@ -145,41 +145,5 @@
       <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /> YouTube
     </a>
   </div>
-
-  <div class="carousel-wrapper">
-    <button class="arrow left" onclick="scrollCarousel(-1)">&#8592;</button>
-    <div class=\"carousel\" id=\"carousel\">
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Voltz Baterias</strong><br>Investimento: R$ 19.041<br>Leads: 1.210<br>Custo/Lead: R$ 18,84</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Jader Center Car</strong><br>Investimento: R$ 849<br>Leads: 58<br>Custo/Lead: R$ 14,65</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Cardans Canada</strong><br>Investimento: R$ 1.510<br>Leads: 138<br>Custo/Lead: R$ 10,94</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Taina Oliveira</strong><br>Investimento: R$ 690<br>Leads: 73<br>Custo/Lead: R$ 9,45</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Izabella Santos</strong><br>Investimento: R$ 6.125<br>Leads: 591<br>Custo/Lead: R$ 12,53</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Wal Felicidade</strong><br>Investimento: R$ 2.300<br>Leads: 289<br>Custo/Lead: R$ 7,96</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Duos Copos</strong><br>Investimento: R$ 3.681<br>Leads: 2.075<br>Custo/Lead: R$ 1,77</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>J10 Soccer</strong><br>Investimento: R$ 2.725<br>Leads: 661<br>Custo/Lead: R$ 4,12</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Futboi</strong><br>Investimento: R$ 659<br>Leads: 91<br>Custo/Lead: R$ 7,24</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>L10 Trainer</strong><br>Investimento: R$ 1.924<br>Leads: 281<br>Custo/Lead: R$ 6,99</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Leo Contador</strong><br>Investimento: R$ 12.164<br>Alcance: 478k<br>Views: 2 Milhões</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Jesus Lima</strong><br>Investimento: R$ 5.925<br>Alcance: 503k<br>Views: 640k</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Roberto Martins</strong><br>Investimento: R$ 1.125<br>Alcance: 77k<br>Views: 115k</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Lote Ideal</strong><br>Investimento: R$ 879<br>Leads: 314<br>Custo/Lead: R$ 2,80</div>
-      <div class=\"card\"><img src=\"0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png\"/><strong>Marmoraria</strong><br>Investimento: R$ 1.967<br>Leads: 314<br>Custo/Lead: R$ 5,54</div>
-      <!-- Os cards de resultados já inseridos anteriormente permanecem aqui -->
-    </div>
-    <button class="arrow right" onclick="scrollCarousel(1)">&#8594;</button>
-  </div>
-
-  <script>
-    const carousel = document.getElementById('carousel');
-    let scrollIndex = 0;
-    function scrollCarousel(direction) {
-      const cardWidth = carousel.querySelector('.card').offsetWidth + 20;
-      scrollIndex += direction;
-      const maxScroll = carousel.children.length - Math.floor(carousel.parentElement.offsetWidth / cardWidth);
-      if (scrollIndex < 0) scrollIndex = 0;
-      if (scrollIndex > maxScroll) scrollIndex = maxScroll;
-      carousel.style.transform = `translateX(-${scrollIndex * cardWidth}px)`;
-    }
-  </script>
 </body>
 </html>
