@@ -1,98 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Martins | Links</title>
+  <title>Lucas Martins | Consultor de Tráfego e Marketing</title>
+  <meta name="description" content="Lucas Martins | Consultor de Marketing Digital, especialista em tráfego pago, anúncios online e performance para negócios locais.">
+  <meta name="keywords" content="tráfego pago, anúncios online, marketing digital, Google Ads, Facebook Ads, consultor de tráfego, Lucas Martins">
+  <meta name="author" content="Lucas Martins">
+  <link rel="icon" type="image/png" href="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #000000;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: #fff;
+      color: #000;
+      text-align: center;
     }
-
-    .profile-img {
-      margin-top: 40px;
+    .profile-pic {
       width: 120px;
       height: 120px;
       border-radius: 50%;
+      margin: 20px auto;
       object-fit: cover;
     }
-
-    .links {
-      margin-top: 30px;
-      width: 90%;
-      max-width: 400px;
+    .link-container {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
+      margin: 20px;
     }
-
-    .link-item {
+    .social-link {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      padding: 15px;
+      padding: 12px;
       border: 2px solid #000;
-      border-radius: 8px;
-      text-decoration: none;
       color: #000;
-      font-weight: bold;
-      transition: background-color 0.3s, color 0.3s;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
     }
-
-    .link-item:hover, .link-item:active {
-      background-color: #000;
+    .social-link:hover {
+      background: #000;
       color: #fff;
     }
-
-    .link-item img {
-      width: 20px;
-      height: 20px;
+    .social-link img {
+      width: 24px;
+      height: 24px;
     }
-
-    .video {
-      margin-top: 40px;
-      width: 90%;
-      max-width: 560px;
-      aspect-ratio: 16 / 9;
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      margin: 30px 0;
+      padding-bottom: 20px;
     }
-
-    @media (max-width: 768px) {
-      .link-item {
-        font-size: 16px;
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .card {
+      flex: 0 0 auto;
+      width: 280px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 0 10px;
+      text-align: left;
+    }
+    .card img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    @keyframes scrollCards {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    @media (min-width: 768px) {
+      .link-container {
+        width: 50%;
+        margin: 20px auto;
       }
     }
   </style>
 </head>
 <body>
-  <img class="profile-img" src="perfil.jpg" alt="Foto de perfil" />
-  <div class="links">
-    <a class="link-item" href="https://www.instagram.com/lucasmartins.ads" target="_blank">
+  <img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png" alt="Lucas Martins" class="profile-pic" />
+  <div class="link-container">
+    <a class="social-link" href="https://www.instagram.com/lucasmartins.ads" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /> Instagram
     </a>
-    <a class="link-item" href="https://www.linkedin.com/in/lucasmartinsrodrigues" target="_blank">
+    <a class="social-link" href="https://www.linkedin.com/in/lucasmartinsrodrigues" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /> LinkedIn
     </a>
-    <a class="link-item" href="https://api.whatsapp.com/send?phone=5531996066172" target="_blank">
+    <a class="social-link" href="https://wa.me/5531996066172" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /> WhatsApp
     </a>
-    <a class="link-item" href="https://www.tiktok.com/@lucasmartinsanalista" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" /> TikTok
+    <a class="social-link" href="https://www.tiktok.com/@lucasmartinsanalista" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" /> TikTok
     </a>
-    <a class="link-item" href="https://www.youtube.com/@lucasmartinsanalista" target="_blank">
+    <a class="social-link" href="https://www.youtube.com/@lucasmartinsanalista" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /> YouTube
     </a>
   </div>
-
-  <div class="video">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=2Wp_V3hGbtw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div class="carousel" id="carousel">
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Voltz Baterias</strong><br>Investimento: R$ 19.041<br>Leads: 1.210<br>Custo/Lead: R$ 18,84</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Jader Center Car</strong><br>Investimento: R$ 849<br>Leads: 58<br>Custo/Lead: R$ 14,65</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Cardans Canada</strong><br>Investimento: R$ 1.510<br>Leads: 138<br>Custo/Lead: R$ 10,94</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Taina Oliveira</strong><br>Investimento: R$ 690<br>Leads: 73<br>Custo/Lead: R$ 9,45</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Izabella Santos</strong><br>Investimento: R$ 6.125<br>Leads: 591<br>Custo/Lead: R$ 12,53</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Wal Felicidade</strong><br>Investimento: R$ 2.300<br>Leads: 289<br>Custo/Lead: R$ 7,96</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Duos Copos</strong><br>Investimento: R$ 3.681<br>Leads: 2.075<br>Custo/Lead: R$ 1,77</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>J10 Soccer</strong><br>Investimento: R$ 2.725<br>Leads: 661<br>Custo/Lead: R$ 4,12</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Futboi</strong><br>Investimento: R$ 659<br>Leads: 91<br>Custo/Lead: R$ 7,24</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>L10 Trainer</strong><br>Investimento: R$ 1.924<br>Leads: 281<br>Custo/Lead: R$ 6,99</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Leo Contador</strong><br>Investimento: R$ 12.164<br>Alcance: 478k<br>Views: 2 Milhões</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Jesus Lima</strong><br>Investimento: R$ 5.925<br>Alcance: 503k<br>Views: 640k</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Roberto Martins</strong><br>Investimento: R$ 1.125<br>Alcance: 77k<br>Views: 115k</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Lote Ideal</strong><br>Investimento: R$ 879<br>Leads: 314<br>Custo/Lead: R$ 2,80</div>
+    <div class="card"><img src="0956492b-8bb0-42f2-b0c0-78047ac0b5a6.png"/><strong>Marmoraria</strong><br>Investimento: R$ 1.967<br>Leads: 314<br>Custo/Lead: R$ 5,54</div>
   </div>
+  <script>
+    const carousel = document.getElementById('carousel');
+    let scrollAmount = 0;
+    function autoScroll() {
+      if (scrollAmount < carousel.scrollWidth - carousel.clientWidth) {
+        scrollAmount += 290;
+        carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+      } else {
+        scrollAmount = 0;
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+    }
+    setInterval(autoScroll, 3000);
+  </script>
 </body>
 </html>
